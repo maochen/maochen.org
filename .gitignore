@@ -12,6 +12,7 @@ bin/*
 *.DS_Store
 *.swp
 lib/*
+.project
 
 # Package Files #
 *.jar

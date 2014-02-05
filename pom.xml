@@ -70,6 +70,7 @@
 	</dependencies>
 
 	<build>
+		<outputDirectory>target/${project.artifactId}-${project.version}/WEB-INF/classes</outputDirectory>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -86,15 +87,49 @@
 				<artifactId>maven-war-plugin</artifactId>
 				<version>2.3</version>
 				<configuration>
+					<webXml>${basedir}/war/WEB-INF/web.xml</webXml>
 					<archiveClasses>true</archiveClasses>
 					<webResources>
 						<!-- in order to interpolate version from pom into appengine-web.xml -->
 						<resource>
-							<directory>${basedir}/war/WEB-INF/classes</directory>
+							<directory>${basedir}/war/www</directory>
+							<targetPath>www</targetPath>
+						</resource>
+						<resource>
+							<directory>${basedir}/war/WEB-INF</directory>
 							<filtering>true</filtering>
 							<targetPath>WEB-INF</targetPath>
 						</resource>
 					</webResources>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-dependency-plugin</artifactId>
+				<executions>
+					<execution>
+						<phase>install</phase>
+						<goals>
+							<goal>copy-dependencies</goal>
+						</goals>
+						<configuration>
+							<outputDirectory>${basedir}/war/WEB-INF/lib</outputDirectory>
+						</configuration>
+					</execution>
+				</executions>
+			</plugin>
+
+			<plugin>
+				<artifactId>maven-clean-plugin</artifactId>
+				<configuration>
+					<filesets>
+						<fileset>
+							<directory>${basedir}/war/WEB-INF/lib</directory>
+						</fileset>
+						<fileset>
+							<directory>${basedir}/war/WEB-INF/classes</directory>
+						</fileset>
+					</filesets>
 				</configuration>
 			</plugin>
 

@@ -11,7 +11,7 @@ bin/*
 *.lock
 *.DS_Store
 *.swp
-lib/*
+war/WEB-INF/lib/*
 .project
 
 # Package Files #

@@ -1,0 +1,22 @@
+# Damn Mac #
+.DS_Store
+
+*.class
+bin
+bin/*
+.classpath
+.settings/*
+.settings
+*~
+*.lock
+*.DS_Store
+*.swp
+lib/*
+
+# Package Files #
+*.jar
+*.war
+*.ear
+target/*
+target
+

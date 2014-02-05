@@ -1,0 +1,19 @@
+body {
+	font-size: 14px;
+	margin-top: 0px;
+}
+
+.info {
+	color: grey;
+}
+
+.main_container {
+	margin-top: 5px;
+	text-align: left;
+	display: inline-block;
+	background-color: white;
+	border: 1px;
+	border-color: grey;
+	border-style: solid;
+	padding: 10px;
+}

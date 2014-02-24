@@ -19,7 +19,6 @@ public class WebService {
     // return "Added order #" + order;
     // }
 
-    @Path("/ws")
     @GET
     @Produces("text/html")
     public String find(@PathParam("name") final String name) {

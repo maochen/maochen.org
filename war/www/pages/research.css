@@ -3,6 +3,11 @@ body {
 	margin-top: 0px;
 }
 
+hr {
+	margin: 5px;
+	width: inherit;
+}
+
 .info {
 	color: grey;
 }
@@ -11,9 +16,7 @@ body {
 	margin-top: 5px;
 	text-align: left;
 	display: inline-block;
-	background-color: white;
-	border: 1px;
-	border-color: grey;
-	border-style: solid;
-	padding: 10px;
+	background-color: white;	
+	padding: 0px 10px 10px 10px;
+	width: 100%;
 }

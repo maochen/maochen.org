@@ -52,6 +52,11 @@ iframe {
 	list-style-position: inside;
 }
 
+.my_headdivmargin{
+	margin-top: 10px;
+	margin-bottom: 30px;
+}
+
 .my_divmargin {
 	margin-top: 10px;
 	margin-bottom: 10px;

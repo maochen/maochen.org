@@ -5,7 +5,7 @@
 */
 
 .featured_top{
-		padding-top: 40px;
+	padding-top: 40px;
 }
 
 .navbar-inner {
@@ -15,7 +15,7 @@
 	border:none;
 	filter:none;
 }
-.navbar-fixed-top .navbar-inner, .navbar-static-top .navbar-inner {
+.navbar-fixed-top .navbar-inner .navbar-static-top .navbar-inner {
 	-webkit-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	-moz-box-shadow: 0 1px 2px rgba(0,0,0,0.5);
 	box-shadow: 0 1px 2px rgba(0,0,0,0.5);
@@ -66,7 +66,7 @@
 	border-right: 1px solid #fff;
 }
 
-@media (max-width: 979px) {
+@media (max-width: 900px) {
 .nav-collapse .nav > li > a:hover, .nav-collapse .nav > li > a:focus, .nav-collapse .dropdown-menu a:hover, .nav-collapse .dropdown-menu a:focus {
 	background-color: #000;
 	color:#fff;

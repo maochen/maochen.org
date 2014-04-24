@@ -4,20 +4,22 @@
 *.class
 bin
 bin/*
-.classpath
-.settings/*
-.settings
 *~
 *.lock
 *.DS_Store
 *.swp
-war/WEB-INF/lib/*
+target
+
+# Eclipse #
+.settings/
+.classpath
 .project
+
+# Intellij #
+.idea
+*.iml
 
 # Package Files #
 *.jar
 *.war
 *.ear
-target/*
-target
-

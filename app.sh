@@ -1,12 +1,14 @@
-#APPCFG=/Applications/eclipse/plugins/com.google.appengine.eclipse.sdkbundle_1.9.0/appengine-java-sdk-1.9.0/bin/appcfg.sh
-APPCFG=~/springsource/sts-3.4.0.RELEASE/plugins/com.google.appengine.eclipse.sdkbundle_1.9.0/appengine-java-sdk-1.9.0/bin/appcfg.sh
+APPCFG=~/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.3/appengine-java-sdk/appengine-java-sdk-1.9.3/bin
 
 case "$1" in
 	server)
 		mvn clean install appengine:devserver
 		;;
 	upload)
-		sudo $APPCFG update war	
+		mvn clean
+		sudo chmod +x $APPCFG/appcfg.sh
+		sudo chmod +x $APPCFG/run_java.sh
+		sudo $APPCFG/appcfg.sh update war	
 		;;
 	*)
 esac

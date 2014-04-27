@@ -8,7 +8,11 @@ bin/*
 *.lock
 *.DS_Store
 *.swp
+<<<<<<< HEAD
 war/WEB-INF/lib/*
+=======
+target
+>>>>>>> 424aac6c270a5fb13486c07b4fb7b3bfa7e06fa8
 
 # Eclipse #
 .settings/
@@ -23,6 +27,3 @@ war/WEB-INF/lib/*
 *.jar
 *.war
 *.ear
-target/*
-target
-

@@ -17,21 +17,12 @@
         </pluginRepository>
     </pluginRepositories>
 
-<<<<<<< HEAD
-	<properties>
-		<appengine.app.version>1</appengine.app.version>
-		<appengine.target.version>1.9.3</appengine.target.version>
-		<mvncleanplugin.version>2.5</mvncleanplugin.version>
-		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-	</properties>
-=======
     <properties>
         <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.1</appengine.target.version>
+        <appengine.target.version>1.9.3</appengine.target.version>
         <mvncleanplugin.version>2.5</mvncleanplugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
->>>>>>> 424aac6c270a5fb13486c07b4fb7b3bfa7e06fa8
 
     <dependencies>
         <!-- Compile/runtime dependencies -->
@@ -40,24 +31,10 @@
             <artifactId>appengine-api-1.0-sdk</artifactId>
             <version>${appengine.target.version}</version>
         </dependency>
-
-<<<<<<< HEAD
-		<dependency>
-			<groupId>org.glassfish.jersey.bundles</groupId>
-			<artifactId>jaxrs-ri</artifactId>
-			<version>2.7</version>
-		</dependency>
-		<dependency>
-			<groupId>javax.servlet</groupId>
-			<artifactId>servlet-api</artifactId>
-			<version>3.0-alpha-1</version>
-		</dependency>
-	</dependencies>
-=======
         <dependency>
             <groupId>org.glassfish.jersey.bundles</groupId>
             <artifactId>jaxrs-ri</artifactId>
-            <version>2.6</version>
+            <version>2.7</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
@@ -65,7 +42,7 @@
             <version>3.0-alpha-1</version>
         </dependency>
     </dependencies>
->>>>>>> 424aac6c270a5fb13486c07b4fb7b3bfa7e06fa8
+
 
     <build>
         <sourceDirectory>src/main/java</sourceDirectory>

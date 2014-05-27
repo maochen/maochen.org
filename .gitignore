@@ -18,6 +18,10 @@ war/WEB-INF/lib/*
 # Intellij #
 .idea
 *.iml
+out
+
+# Maven #
+target
 
 # Package Files #
 *.jar

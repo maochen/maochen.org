@@ -1,4 +1,4 @@
-APPCFG=~/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.6/appengine-java-sdk/appengine-java-sdk-1.9.6/bin
+APPCFG=~/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.10/appengine-java-sdk/appengine-java-sdk-1.9.10/bin
 
 case "$1" in
 	server)

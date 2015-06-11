@@ -19,7 +19,7 @@
 
     <properties>
         <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.17a</appengine.target.version>
+        <appengine.target.version>1.9.22</appengine.target.version>
         <mvncleanplugin.version>2.5</mvncleanplugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -34,7 +34,7 @@
         <dependency>
             <groupId>org.glassfish.jersey.bundles</groupId>
             <artifactId>jaxrs-ri</artifactId>
-            <version>2.14</version>
+            <version>2.18</version>
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>

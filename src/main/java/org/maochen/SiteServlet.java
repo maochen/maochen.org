@@ -18,34 +18,35 @@ public class SiteServlet extends HttpServlet {
     }
 
     private String getInfo(HttpServletRequest req) {
-        StringBuffer buf = new StringBuffer();
+        StringBuilder builder = new StringBuilder();
 
         String time = new Date().toString();
         String clientip = req.getRemoteAddr();
-
+        String agent = req.getHeader("User-Agent");
         int cpucores = Runtime.getRuntime().availableProcessors();
         String os = System.getProperty("os.name").toLowerCase();
 
         String jvmver = System.getProperty("java.version");
         long jvmmem = Runtime.getRuntime().maxMemory();
 
-        buf.append("Request Time: " + time + "<br/>");
-        buf.append("IP: " + clientip + "<br/>");
-        buf.append("<hr />");
+        builder.append("Request Time: " + time + "<br/>");
+        builder.append("IP: " + clientip + "<br/>");
+        builder.append("Agent: " + agent + "<br/>");
+        builder.append("<hr />");
 
-        buf.append("CPU Cores: " + cpucores + "<br/>");
-        buf.append("OS: " + os + "<br/>");
-        buf.append("JVM Version: " + jvmver + "<br/>");
-        buf.append("JVM Max Memory Size: " + jvmmem / 1049000 + "MB" + "<br/>");
+        builder.append("CPU Cores: " + cpucores + "<br/>");
+        builder.append("OS: " + os + "<br/>");
+        builder.append("JVM Version: " + jvmver + "<br/>");
+        builder.append("JVM Max Memory Size: " + jvmmem / 1049000 + "MB" + "<br/>");
 
-        buf.append("<hr />");
+        builder.append("<hr />");
 
         String gaeVersion = SystemProperty.version.get();
-        buf.append("Google AppEngine Version: " + gaeVersion + "<br/>");
+        builder.append("Google AppEngine Version: " + gaeVersion + "<br/>");
         String appVersion = SystemProperty.applicationVersion.get();
-        buf.append("Application Version: " + appVersion + "<br/>");
+        builder.append("Application Version: " + appVersion + "<br/>");
 
-        return buf.toString();
+        return builder.toString();
 
     }
 }

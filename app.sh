@@ -1,4 +1,5 @@
-APPCFG=~/.m2/repository/com/google/appengine/appengine-java-sdk/1.9.27/appengine-java-sdk/appengine-java-sdk-1.9.27/bin
+GAE_VERSION=1.9.32
+APPCFG=~/.m2/repository/com/google/appengine/appengine-java-sdk/$GAE_VERSION/appengine-java-sdk/appengine-java-sdk-$GAE_VERSION/bin
 
 case "$1" in
 	server)

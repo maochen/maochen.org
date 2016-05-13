@@ -6,12 +6,21 @@ html {
     box-sizing: border-box;
 }
 
+html, body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    /*overflow-x: hidden;*/
+}
+
 *, *:before, *:after {
     box-sizing: inherit;
 }
 
 iframe {
     border: none;
+    pointer-events: none;
 }
 
 .blue {
@@ -22,10 +31,6 @@ iframe {
 .green {
     color: #0A0;
     font-weight: normal;
-}
-
-#top {
-    /*margin-top: -50px;*/
 }
 
 .navbar-default {
@@ -624,7 +629,6 @@ iframe {
 }
 
 #cta {
-    background-image: url(../images/cta-bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     width: 100%;
@@ -752,6 +756,7 @@ form {
 footer {
     background-color: #3c3c3c;
     margin-top: 40px;
+    width: 100%;
 }
 
 .copyright-text {
@@ -913,6 +918,10 @@ footer {
 }
 
 @media (max-width: 676px) {
+
+    html body {
+        overflow-x: hidden;
+    }
 
     #big-banner .main-icons {
         text-align: center;

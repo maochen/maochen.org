@@ -26,6 +26,7 @@ iframe {
 .btn-trans {
     background: none !important;
     color: white;
+    margin-left: 25px;
 }
 
 .btn-no-border {

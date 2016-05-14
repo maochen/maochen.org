@@ -8,14 +8,14 @@
     </welcome-file-list>
 
     <servlet>
-        <servlet-name>MyApplication</servlet-name>
+        <servlet-name>SiteStatus</servlet-name>
         <servlet-class>org.maochen.SiteServlet</servlet-class>
         <load-on-startup>1</load-on-startup>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>MyApplication</servlet-name>
-        <url-pattern>/servlet</url-pattern>
+        <servlet-name>SiteStatus</servlet-name>
+        <url-pattern>/sitestatus</url-pattern>
     </servlet-mapping>
 
 </web-app>

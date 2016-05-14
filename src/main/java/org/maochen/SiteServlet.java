@@ -18,6 +18,10 @@ public class SiteServlet extends HttpServlet {
     }
 
     private String getInfo(HttpServletRequest req) {
+        if (!"castorgmc".equals(req.getHeader("username"))) {
+            return "Not Authorized!";
+        }
+
         StringBuilder builder = new StringBuilder();
 
         String time = new Date().toString();
@@ -33,7 +37,7 @@ public class SiteServlet extends HttpServlet {
         builder.append("IP: " + clientip + "<br/>");
         builder.append("Agent: " + agent + "<br/>");
         builder.append("<hr />");
-
+        builder.append("Serve Status:<br />");
         builder.append("CPU Cores: " + cpucores + "<br/>");
         builder.append("OS: " + os + "<br/>");
         builder.append("JVM Version: " + jvmver + "<br/>");

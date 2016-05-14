@@ -57,22 +57,22 @@
                 <div class="main-icons">
                     <h1>Maochen G.</h1>
                     <h3>Staff Engineer in NLP</h3>
-                    <i class="fa fa-quote-left fa-2x"></i>
+                    <span style="float: left"><i class="fa fa-quote-left fa-2x"></i></span>
 
-                    <div style="float: left; margin-left: 50px; margin-top: -23px;">
+                    <div style="float: left; margin-left: 50px;">
+                        contact <i class="fa fa-at" style="font-size: small;" aria-hidden="true"></i>
+                        maochen <i class="fa fa-dot-circle-o" style="font-size: small;" aria-hidden="true"></i> org<br/>
                         Originated from Shanghai, China.<br/>
-                        Graduated from New York University.<br/>
-                        Research in statistical ML based Natural Language Processing.<br/>
+                        Research in Statistical Natural Language Processing.<br/>
                     </div>
                 </div>
 
-                <div style="margin-top:-180px; display:inline-block; height: 280px;width: 50%;text-align:center;float: right;border-left: 2px solid #cccccc;">
-
-                    <a class="btn-no-border btn-trans" target="_blank" href="http://github.com/maochen">
+                <div class="main-right">
+                    <a class="btn btn-no-border btn-trans" target="_blank" href="http://github.com/maochen">
                         <i class="fa fa-github-square fa-5x" aria-hidden="true"></i>
                     </a>
 
-                    <a class="btn-no-border btn-trans" target="_blank" href="http://www.linkedin.com/in/maochen">
+                    <a class="btn btn-no-border btn-trans" target="_blank" href="http://www.linkedin.com/in/maochen">
                         <i class="fa fa-linkedin-square fa-5x" aria-hidden="true"></i>
                     </a>
 
@@ -82,12 +82,12 @@
                         <i class="fa fa-stack-overflow fa-lg" aria-hidden="true"></i>
                         &nbsp;&nbsp;StackOverflow</a>
 
-                    <br />
+                    <br/>
                     <a class="btn btn-default btn-trans btn-text" target="_blank" href="docs/resume.pdf">
                         <i class="fa fa-wpforms fa-lg" aria-hidden="true"></i>
                         &nbsp;&nbsp;Current&nbsp;Vitae </a>
 
-                    <br />
+                    <br/>
                     <a class="btn btn-default btn-trans btn-text" target="_blank" href="http://www.shakedecision.com">
                         <i class="fa fa-user-secret fa-lg" aria-hidden="true"></i>
                         &nbsp;&nbsp;ShakeDecision</a>
@@ -100,15 +100,27 @@
 
 <div id="about">
     <div class="container">
-        <div class="row">
-            <div class="triangle"></div>
-        </div>
 
         <div class="row">
             <div class="col-md-12">
 
-                <section class="cd-container" style="margin-top: 20px;">
-
+                <section class="cd-container" style="margin-top: -50px;">
+                    <div class="cd-timeline-content-no-cut service-box-content">
+                        <div style="float: left; width: 40px;"><i class="fa fa-i-cursor fa-5x" aria-hidden="true"></i>
+                        </div>
+                        <div style="float: right; width: 85%;">
+                            Interest Area: Parsing, Entity Detection, Semantic Relation Extraction, Knowledge
+                            Distributed
+                            Representation.
+                            <br/>
+                            Currently I am working in IBM Watson Medical group in New York, doing medical problem list
+                            classification. I am trying to generate high quality features using statistical
+                            approach.<br/>
+                            Previously, I also did some research in creating a statistical syntactic parser and word
+                            distributed relation. By using that, we could built an entity detection as well as entity
+                            linking system.
+                        </div>
+                    </div>
                 </section>
 
 
@@ -120,7 +132,7 @@
 
                         <div class="cd-timeline-content service-box-content">
                             <img src="images/logo/ibm_logo.png" style="width: 200px;height: 40px; float: right"/>
-                            <h2>IBM</h2>
+                            <h2>IBM Watson</h2>
                             Mar 2016 - Present</br>
                             Staff Software Engineer</br>
                             Yorktown Heights, NY
@@ -195,8 +207,6 @@
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="header-section-title">Research</h2>
-                    <h5 class="text-center">Parsing | Entity Detection | Semantic Relation Extraction | Knowledge Dist.
-                        Representation</h5>
                 </div>
             </div>
         </div>
@@ -397,7 +407,27 @@
                                         class="fa fa-linkedin"></i></a></li>
                                 <li><a href="http://www.weibo.com/castorguan" class="#"><i
                                         class="fa fa-weibo"></i></a></li>
-                                <!--<li><a href="#" class="#"><i class="fa fa-rss"></i></a></li>-->
+                                <li>
+                                    <script>
+                                        function reqstatus() {
+                                            var person = prompt("Please enter your name", "");
+
+                                            $.ajax({
+                                                url: "/sitestatus",
+                                                type: "GET",
+                                                beforeSend: function (xhr) {
+                                                    xhr.setRequestHeader('username', person);
+                                                },
+                                                success: function (msg) {
+                                                    var wnd = window.open("about:blank", "_blank");
+                                                    wnd.document.write(msg);
+                                                }
+                                            });
+                                        }
+
+                                    </script>
+                                    <a href="#" class="#" onclick="reqstatus();">&nbsp;</a>
+                                </li>
                             </ul>
                         </div>
                     </div>
@@ -406,6 +436,7 @@
         </div>
     </div>
 </footer>
+
 
 </body>
 </html>

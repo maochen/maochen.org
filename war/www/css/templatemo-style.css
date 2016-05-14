@@ -23,10 +23,17 @@ iframe {
     pointer-events: none;
 }
 
+.fa {
+    display: inline;
+}
+
 .btn-trans {
-    background: none !important;
+    background: none;
     color: white;
-    margin-left: 25px;
+}
+
+.btn-trans:hover{
+    background-color: #00ff03;
 }
 
 .btn-no-border {
@@ -37,9 +44,19 @@ iframe {
     padding-top: 15px;
     padding-bottom: 15px;
     margin-top: 15px;
-    width: 226px;
+    width: 200px;
     font-size: large;
     font-weight: bold;
+}
+
+.main-right {
+    margin-top: -180px;
+    display: inline-block;
+    height: 320px;
+    width: 50%;
+    text-align: center;
+    float: right;
+    border-left: 2px solid #ccc;
 }
 
 .blue {
@@ -142,7 +159,6 @@ iframe {
 
 #big-banner .main-icons i {
     color: #fff;
-    display: block;
 }
 
 #big-banner .main-icons i:hover {
@@ -391,14 +407,15 @@ iframe {
     background-color: transparent !important;
 }
 
-.cd-timeline-content {
+.cd-timeline-content, .cd-timeline-content-no-cut {
     position: relative;
     margin-left: 60px;
-    background-color: #eee;
-    border-radius: 0.50em;
+    background-color: #f3f3f3;
+    border-radius: 0.30em;
+    border: thin solid #eaeaea;
 }
 
-.cd-timeline-content:after {
+.cd-timeline-content:after, .cd-timeline-content-no-cut:after {
     content: "";
     display: table;
     clear: both;
@@ -919,7 +936,6 @@ footer {
 
     #big-banner .main-icons i {
         color: #fff;
-        display: block;
     }
 
     #big-banner .main-icons i:hover {
@@ -957,8 +973,6 @@ footer {
     #big-banner .main-icons i {
         font-size: 42px;
         color: #fff;
-        display: block;
-        padding-bottom: 20px;
     }
 
     #big-banner .main-icons i:hover {
@@ -1001,11 +1015,6 @@ footer {
 }
 
 @media (max-width: 768px) {
-    .cd-timeline-content,
-    .cd-timeline-block .projects {
-        margin-top: 60px;
-        padding-bottom: 40px;
-    }
 
     #big-banner .main-icons {
         text-align: left;
@@ -1014,11 +1023,7 @@ footer {
 }
 
 @media (max-width: 1170px) {
-    .cd-timeline-content,
-    .cd-timeline-block .projects {
-        margin-top: 60px;
-        padding-bottom: 40px;
-    }
+
 }
 
 @media (max-width: 360px) {

@@ -410,23 +410,25 @@
                                 <li>
                                     <script>
                                         function reqstatus() {
-                                            var person = prompt("Please enter your name", "");
+                                            var code = prompt("Please enter passcode", "");
 
                                             $.ajax({
                                                 url: "/sitestatus",
                                                 type: "GET",
                                                 beforeSend: function (xhr) {
-                                                    xhr.setRequestHeader('username', person);
+                                                    xhr.setRequestHeader('code', code);
                                                 },
                                                 success: function (msg) {
-                                                    var wnd = window.open("about:blank", "_blank");
+                                                    var wnd = window.open("about:blank", '_self', false);
                                                     wnd.document.write(msg);
                                                 }
                                             });
                                         }
 
                                     </script>
-                                    <a href="#" class="#" onclick="reqstatus();">&nbsp;</a>
+                                    <a href="#" class="#" onclick="reqstatus();">
+                                        <i class="fa fa-server" aria-hidden="true"></i>
+                                    </a>
                                 </li>
                             </ul>
                         </div>

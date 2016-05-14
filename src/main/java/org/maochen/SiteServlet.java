@@ -18,7 +18,7 @@ public class SiteServlet extends HttpServlet {
     }
 
     private String getInfo(HttpServletRequest req) {
-        if (!"castorgmc".equals(req.getHeader("username"))) {
+        if (!"castorgmc".equals(req.getHeader("code"))) {
             return "Not Authorized!";
         }
 

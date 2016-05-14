@@ -55,11 +55,11 @@
         <div class="row">
             <div class="col-md-12 col-xs-12">
                 <div class="main-icons">
-                    <h1>Maochen G.</h1>
-                    <h3>Staff Engineer in NLP</h3>
-                    <span style="float: left"><i class="fa fa-quote-left fa-2x"></i></span>
+                    <span class="main-name">Maochen G.</span>
+                    <span class="main-title">Staff Engineer in NLP</span>
+                    <span class="main-title" style="width: auto"><i class="fa fa-quote-left fa-lg"></i></span>
 
-                    <div style="float: left; margin-left: 50px;">
+                    <div style="float: left; margin-left: 15px;margin-right: 10px;">
                         contact <i class="fa fa-at" style="font-size: small;" aria-hidden="true"></i>
                         maochen <i class="fa fa-dot-circle-o" style="font-size: small;" aria-hidden="true"></i> org<br/>
                         Originated from Shanghai, China.<br/>
@@ -108,7 +108,7 @@
                     <div class="cd-timeline-content-no-cut service-box-content">
                         <div style="float: left; width: 40px;"><i class="fa fa-i-cursor fa-5x" aria-hidden="true"></i>
                         </div>
-                        <div style="float: right; width: 85%;">
+                        <div class="intro-right">
                             Interest Area: Parsing, Entity Detection, Semantic Relation Extraction, Knowledge
                             Distributed
                             Representation.
@@ -410,7 +410,7 @@
                                 <li>
                                     <script>
                                         function reqstatus() {
-                                            var code = prompt("Please enter passcode", "");
+                                            var code = $.dialog("Please enter passcode", "");
 
                                             $.ajax({
                                                 url: "/sitestatus",

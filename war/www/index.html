@@ -410,7 +410,7 @@
                                 <li>
                                     <script>
                                         function reqstatus() {
-                                            var code = $.dialog("Please enter passcode", "");
+                                            var code = prompt("Please enter passcode", "");
 
                                             $.ajax({
                                                 url: "/sitestatus",

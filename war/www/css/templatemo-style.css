@@ -427,7 +427,6 @@ iframe {
 
 .cd-timeline-content, .cd-timeline-content-no-cut {
     position: relative;
-    margin-left: 60px;
     background-color: #f3f3f3;
     border-radius: 0.30em;
     border: thin solid #eaeaea;
@@ -923,7 +922,7 @@ footer {
     }
 
     .navbar-default .navbar-toggle:hover {
-        background-color: #fff;
+        background-color: #00ff33;
         color: #fff;
     }
 

@@ -88,7 +88,7 @@ iframe {
 }
 
 .navbar-default {
-    background-color: #3c3c3c;
+    background-color: #222222;
     border-color: transparent;
 }
 
@@ -110,7 +110,6 @@ iframe {
 }
 
 .navbar-right a {
-    font-size: 16px;
     padding: 0;
     color: #B1B1B1 !important;
     line-height: 50px;
@@ -808,7 +807,7 @@ form {
 }
 
 footer {
-    background-color: #3c3c3c;
+    background-color: #222222;
     margin-top: 40px;
     width: 100%;
 }

@@ -11,5 +11,8 @@ case "$1" in
 		sudo chmod +x $APPCFG/run_java.sh
 		sudo $APPCFG/appcfg.sh update war	
 		;;
+	rollback)
+		$APPCFG/appcfg.sh rollback war
+		;;
 	*)
 esac

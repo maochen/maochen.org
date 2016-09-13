@@ -49,6 +49,10 @@ iframe {
     font-weight: bold;
 }
 
+.main-color {
+    color: #ffffff;
+}
+
 .main-right {
     margin-top: -180px;
     display: inline-block;
@@ -164,7 +168,7 @@ iframe {
 #big-banner .main-icons {
     text-align: left;
     color: #cccccc;
-    margin-top: 180px;
+    margin-top: 160px;
     width: 50%;
 }
 

@@ -1,12 +1,12 @@
 #!/usr/bin/env bash
 
-GAE_VERSION=1.9.54
+GAE_VERSION=1.9.56
 APPCFG=~/.m2/repository/com/google/appengine/appengine-java-sdk/$GAE_VERSION/appengine-java-sdk/appengine-java-sdk-$GAE_VERSION/bin
 
 case "$1" in
-  server)
-    mvn clean install appengine:devserver
-    ;;
+    server)
+        mvn clean install appengine:devserver
+        ;;
     upload)
         mvn clean install -U
         sudo chmod +x $APPCFG/appcfg.sh

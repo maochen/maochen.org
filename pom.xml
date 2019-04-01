@@ -22,8 +22,8 @@
 
     <properties>
         <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.64</appengine.target.version>
-        <mvncleanplugin.version>3.0.0</mvncleanplugin.version>
+        <appengine.target.version>1.9.73</appengine.target.version>
+        <mvncleanplugin.version>3.1.0</mvncleanplugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
 
@@ -36,8 +36,8 @@
         </dependency>
         <dependency>
             <groupId>javax.servlet</groupId>
-            <artifactId>servlet-api</artifactId>
-            <version>3.0-alpha-1</version>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>4.0.1</version>
         </dependency>
     </dependencies>
 
@@ -48,7 +48,7 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <version>3.6.1</version>
+                <version>3.8.0</version>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>
@@ -59,7 +59,7 @@
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-war-plugin</artifactId>
-                <version>3.1.0</version>
+                <version>3.2.2</version>
                 <configuration>
                     <outputDirectory>war/WEB-INF/classes</outputDirectory>
                     <webXml>${basedir}/war/WEB-INF/web.xml</webXml>

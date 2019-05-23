@@ -22,7 +22,7 @@
 
     <properties>
         <appengine.app.version>1</appengine.app.version>
-        <appengine.target.version>1.9.73</appengine.target.version>
+        <appengine.target.version>1.9.74</appengine.target.version>
         <mvncleanplugin.version>3.1.0</mvncleanplugin.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     </properties>
@@ -48,7 +48,7 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
-                <version>3.8.0</version>
+                <version>3.8.1</version>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <configuration>
                     <source>1.8</source>

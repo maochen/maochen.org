@@ -20,8 +20,8 @@
 
     <security-constraint>
         <web-resource-collection>
-            <web-resource-name>profile</web-resource-name>
-            <url-pattern>/profile/*</url-pattern>
+            <web-resource-name>all</web-resource-name>
+            <url-pattern>/*</url-pattern>
         </web-resource-collection>
         <user-data-constraint>
             <transport-guarantee>CONFIDENTIAL</transport-guarantee>

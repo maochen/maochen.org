@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-GAE_VERSION=1.9.74
+GAE_VERSION=1.9.76
 APPCFG=~/.m2/repository/com/google/appengine/appengine-java-sdk/$GAE_VERSION/appengine-java-sdk/appengine-java-sdk-$GAE_VERSION/bin
 
 case "$1" in
